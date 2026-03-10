@@ -42,15 +42,15 @@ This plugin is distributed via Claude Code marketplace using `.claude-plugin/mar
 ### Claude Code (Recommended)
 
 ```bash
-/plugin marketplace add antonbabenko/terraform-skill
-/plugin install terraform-skill@antonbabenko
+/plugin marketplace add lourencosoaress/terraform-generator
+/plugin install terraform-generator@lourencosoaress
 ```
 
 ### Manual Installation
 
 ```bash
 # Clone to Claude skills directory
-git clone https://github.com/antonbabenko/terraform-skill ~/.claude/skills/terraform-skill
+git clone https://github.com/lourencosoaress/terraform-generator ~/.claude/skills/terraform-generator
 ```
 
 ### Private Testing
@@ -58,7 +58,7 @@ git clone https://github.com/antonbabenko/terraform-skill ~/.claude/skills/terra
 While the repository is private, you can test locally:
 
 ```bash
-git clone git@github.com:antonbabenko/terraform-skill.git ~/.claude/skills/terraform-skill
+git clone git@github.com:lourencosoaress/terraform-generator.git ~/.claude/skills/terraform-generator
 # Claude Code will load it from the local filesystem
 ```
 
@@ -152,30 +152,6 @@ Not just "what to do" but "when and why" - helping you make informed architectur
 - **Terraform** 1.0+ or **OpenTofu** 1.6+
 - Optional: MCP Terraform server for enhanced registry integration
 
-## Contributing
-
-See [CLAUDE.md](CLAUDE.md) for:
-- Skill development guidelines
-- Content structure philosophy
-- How to propose improvements
-- Testing and validation approach
-
-**Issues & Feedback:**
-[GitHub Issues](https://github.com/antonbabenko/terraform-skill/issues)
-
-## Releases
-
-Releases are automated based on conventional commits in commit messages:
-
-| Commit Type | Version Bump | Example |
-|-------------|--------------|---------|
-| `feat!:` or `BREAKING CHANGE:` | Major | 1.2.3 → 2.0.0 |
-| `feat:` | Minor | 1.2.3 → 1.3.0 |
-| `fix:` | Patch | 1.2.3 → 1.2.4 |
-| Other commits | Patch (default) | 1.2.3 → 1.2.4 |
-
-Releases are created automatically when changes are pushed to master.
-
 ## Related Resources
 
 ### Official Documentation
@@ -198,14 +174,3 @@ Releases are created automatically when changes are pushed to master.
 - [terraform-switcher](https://github.com/warrensbox/terraform-switcher) - Terraform version manager
 - [TFLint](https://github.com/terraform-linters/tflint) - Terraform linter
 - [Trivy](https://github.com/aquasecurity/trivy) - Security scanner for IaC
-
-## License & Attribution
-
-**License:** Apache 2.0 - see [LICENSE](LICENSE)
-
-If you create derivative works or skills based on this skill, please include:
-```
-Based on terraform-skill by Anton Babenko
-https://github.com/antonbabenko/terraform-skill
-terraform-best-practices.com | Compliance.tf
-```
