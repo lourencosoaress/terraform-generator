@@ -4,7 +4,7 @@ description: Use when working with Terraform or OpenTofu - creating modules, wri
 license: Apache-2.0
 metadata:
   author: Anton Babenko
-  version: 1.6.2
+  version: 1.6.3
 ---
 
 # Terraform Skill for Claude
